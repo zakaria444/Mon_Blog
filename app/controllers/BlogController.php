@@ -45,11 +45,11 @@ class BlogController extends Controller{
             if($loggedInUser){
               // Create Session
               $this->createUserSession($loggedInUser);
-              $this->view('articleController');
+              // $this->view('');
             } else {
               $data['password_err'] = 'Password incorrect';
   
-              $this->view('users/login', $data);
+              $this->view('', $data);
             }
           } else {
             // Load view with errors
@@ -75,7 +75,7 @@ class BlogController extends Controller{
         $_SESSION['id'] = $bloger->id;
         $_SESSION['name'] = $bloger->name;
         $_SESSION['email'] =$bloger->email;
-        redirect('articleController');
+        redirect('Admin');
       }
 
 
