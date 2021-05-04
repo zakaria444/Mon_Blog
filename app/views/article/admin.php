@@ -1,7 +1,6 @@
 <?php
 var_dump($data);
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,6 +10,6 @@ var_dump($data);
     <title>Document</title>
 </head>
 <body>
-    <a href="<?php echo URLROOT; ?>/BlogController/login">link</a>
+    <a>link</a>
 </body>
 </html>
