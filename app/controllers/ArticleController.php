@@ -20,6 +20,11 @@ public function __construct(){
   
         $this->view('article/index', $articl);
       }
+      public function add(){
+        if(!isset($_POST['add'])){
+          $this->view('article/add');
+        }
+      }
 
       public function show(){
         $articl = $this->articleModel->getArticle();
