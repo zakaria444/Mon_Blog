@@ -23,6 +23,7 @@
               
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
                 <form class="d-flex ">
+                <h3>welcom <?php echo  $_SESSION['name'];?></h3>
                   <a class="btn btn-outline-light bg-dark navbar-light text-light" type="button" href="<?php echo URLROOT; ?>/articleController/index"> logout </a>
                 </form>
               </div>
@@ -45,9 +46,10 @@
         <h3><?php echo $row->name_blog?></h3>
         <h4><?php echo $row->description?></h4>
         <div class="crud">
-        <a class="btn btn-outline-light bg-dark navbar-light text-light" type="button" href="<?php echo URLROOT; ?>/BlogController/login"> Login </a>
-        <a class="pull-right" type="button" href="<?php echo URLROOT; ?>/ArticleController/show/<?php echo $row->id; ?>" >Views</a>
-        <a class="pull-right" type="button" href="<?php echo URLROOT; ?>/ArticleController/delete/<?php echo $row->id; ?>" >Delete</a>
+        <a class="btn btn-outline-light bg-dark navbar-light text-light" type="button" href="<?php echo URLROOT; ?>/BlogController/login"> Edit </a>
+        
+        <a class="btn btn-outline-light bg-dark navbar-light text-light" type="button" href="<?php echo URLROOT; ?>/ArticleController/show/<?php echo $row->id; ?>" >Views</a>
+        <a class="btn btn-outline-light bg-dark navbar-light text-light" type="button" href="<?php echo URLROOT; ?>/ArticleController/delete/<?php echo $row->id; ?>" >Delete</a>
 
         </div>
         </div>

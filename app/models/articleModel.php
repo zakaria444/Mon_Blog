@@ -21,6 +21,21 @@
 
       return $row;
     }
+    public function addblog($data)
+    {
+        $this->db->query("INSERT INTO `blog`( `name_blog`, `chapiter_blog`, `description`) VALUES (:name_blog,:chapiter_blog,:description)");
+        //bind the valeus with placholder
+        $this->db->bind(':name_blog', $data['name_blog']);
+        $this->db->bind(':chapiter_blog', $data['chapiter_blog']);
+        $this->db->bind(':description', $data['description']);
+
+        //execution 
+        $this->db->execute();
+
+
+
+
+    }
 
     public function deleteContact($id){
       $this->db->query('DELETE FROM blog WHERE id = :id');

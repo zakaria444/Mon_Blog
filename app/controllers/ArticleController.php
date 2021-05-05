@@ -23,7 +23,19 @@ public function __construct(){
       public function add(){
         if(!isset($_POST['add'])){
           $this->view('article/add');
-        }
+        }else{
+          $data =[
+              'name_blog' => $_POST['name_blog'],
+              'chapiter_blog' => $_POST['chapiter_blog'],
+              'description' => $_POST['description'],
+              
+             
+            ];
+            $useradd=$this->articleModel->addBlog($data);
+          //   $this->view('users/insert',$data);
+            header('location:'. URLROOT . '/' . 'admin');
+           
+  }
       }
 
       public function show(){
