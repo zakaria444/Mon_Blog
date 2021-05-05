@@ -1,0 +1,28 @@
+.title{
+border: solid 1px ;
+display: flex;
+justify-content: center;
+margin-top: 50px;
+}
+.main{
+    margin-top: 80px;
+
+}
+.main_o{
+    border: solid;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+
+}
+.paragraphe{
+
+}
+footer{
+    margin-top: 100px;
+}
+.crud{
+    display: flex;
+    justify-content: space-around;
+}
