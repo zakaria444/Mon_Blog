@@ -36,6 +36,7 @@
 
 
     }
+   
 
     public function deleteContact($id){
       $this->db->query('DELETE FROM blog WHERE id = :id');

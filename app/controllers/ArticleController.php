@@ -38,22 +38,18 @@ public function __construct(){
   }
       }
 
-      public function show(){
-        $articl = $this->articleModel->getArticle();
+      public function show($id){
+        $articl = $this->articleModel->getContactById($id);
         $this->view('article/show', $articl);
 
 
       }
+      public function edit($id){
+        $articl = $this->articleModel->getContactById($id);
+        $this->view('article/edit', $articl);
+        
+      }
       public function delete($id){
-        // if($_SERVER['REQUEST_METHOD'] == 'POST'){
-        //   // Get existing post from model
-        //   $contact = $this->articlModel->getContactById($id);
-          
-        //   // Check for owner
-        //   if($contact->id != $_SESSION['id']){
-        //     redirect('admin');
-        //   }
-  
           if($this->articleModel->deleteContact($id)){
             redirect('admin');
           } else {

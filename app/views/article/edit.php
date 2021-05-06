@@ -9,20 +9,26 @@
     <title>Document</title>
 </head>
 <body>
-<form action="<?php echo URLROOT; ?>/ArticleController/add" method="POST">
+<form action="<?php echo URLROOT; ?>/ArticleController/edit" method="POST">
+
 <div class="mb-3">
   <label for="exampleFormControlInput1" class="form-label">Naming Blog</label>
-  <input type="text" name="name_blog" class="form-control" id="exampleFormControlInput1" placeholder="title">
+  <input type="text" name="name_blog" class="form-control"  id="exampleFormControlInput1" value="<?php echo $data->name_blog?>" placeholder="titel">
 </div>
 <div class="mb-3">
   <label for="exampleFormControlTextarea1" class="form-label">TITLE BLOG</label>
-  <textarea class="form-control"  name="chapiter_blog" id="exampleFormControlTextarea1" rows="3"></textarea>
+  <input class="form-control" value="<?php echo $data->chapiter_blog?>"  name="chapiter_blog" id="exampleFormControlTextarea1" rows="3" ></input>
 </div>
 <div class="mb-3">
   <label for="exampleFormControlTextarea1" class="form-label">Textarea</label>
-  <textarea class="form-control" name="description" id="exampleFormControlTextarea1" rows="3"></textarea>
+  <input class="form-control" name="description" value="<?php echo $data->description?>" id="exampleFormControlTextarea1" rows="3"></input>
 </div>
-<input type="submit" name="add" class="btn btn-primary" value="add"></input>
+<input type="submit" name="add" class="btn btn-primary" value="Edit"></input>
 </form>
+
 </body>
 </html>
+<?php
+
+var_dump($data);
+?>
