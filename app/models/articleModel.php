@@ -21,6 +21,23 @@
 
       return $row;
     }
+    public function editBlog($data){
+      $this->db->query('UPDATE blog SET name_blog = :name_blog, chapiter_blog = :chapiter_blog, description = :description  WHERE id = :id');
+      // Bind values
+      $this->db->bind(':id', $data['id']);
+      $this->db->bind(':name_blog', $data['name_blog']);
+      $this->db->bind(':chapiter_blog', $data['chapiter_blog']);
+      $this->db->bind(':description', $data['description']);
+      
+
+      // Execute
+      if($this->db->execute()){
+        return true;
+      } else {
+        return false;
+      }
+    }
+
     public function addblog($data)
     {
         $this->db->query("INSERT INTO `blog`( `name_blog`, `chapiter_blog`, `description`) VALUES (:name_blog,:chapiter_blog,:description)");
@@ -36,6 +53,7 @@
 
 
     }
+   
 
     public function deleteContact($id){
       $this->db->query('DELETE FROM blog WHERE id = :id');

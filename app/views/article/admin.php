@@ -46,7 +46,7 @@
         <h3><?php echo $row->name_blog?></h3>
         <h4><?php echo $row->description?></h4>
         <div class="crud">
-        <a class="btn btn-outline-light bg-dark navbar-light text-light" type="button" href="<?php echo URLROOT; ?>/BlogController/login"> Edit </a>
+        <a class="btn btn-outline-light bg-dark navbar-light text-light" type="button" href="<?php echo URLROOT; ?>/ArticleController/edit/<?php echo $row->id; ?>"> Edit </a>
         
         <a class="btn btn-outline-light bg-dark navbar-light text-light" type="button" href="<?php echo URLROOT; ?>/ArticleController/show/<?php echo $row->id; ?>" >Views</a>
         <a class="btn btn-outline-light bg-dark navbar-light text-light" type="button" href="<?php echo URLROOT; ?>/ArticleController/delete/<?php echo $row->id; ?>" >Delete</a>
