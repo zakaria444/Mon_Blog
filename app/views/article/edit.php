@@ -9,7 +9,7 @@
     <title>Document</title>
 </head>
 <body>
-<form action="<?php echo URLROOT; ?>/ArticleController/edit" method="POST">
+<form action="<?php echo URLROOT; ?>/ArticleController/editid/<?php echo $data->id; ?>" method="POST">
 
 <div class="mb-3">
   <label for="exampleFormControlInput1" class="form-label">Naming Blog</label>
@@ -23,7 +23,7 @@
   <label for="exampleFormControlTextarea1" class="form-label">Textarea</label>
   <input class="form-control" name="description" value="<?php echo $data->description?>" id="exampleFormControlTextarea1" rows="3"></input>
 </div>
-<input type="submit" name="add" class="btn btn-primary" value="Edit"></input>
+<input type="submit" name="edit" class="btn btn-primary" value="Edit"></input>
 </form>
 
 </body>
