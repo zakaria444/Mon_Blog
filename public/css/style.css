@@ -26,3 +26,27 @@ footer{
     display: flex;
     justify-content: space-around;
 }
+.card-img-overlay{
+    color: brown;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 900px;
+}
+.card-img{
+
+}
+.card{
+    display:flex;
+}
+.card-text{
+    border: solid;
+    width: 500px;
+    HEIGHT: 100px;
+    font-style: oblique;
+
+}
+.card-title{
+    
+}
