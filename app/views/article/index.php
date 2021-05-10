@@ -29,25 +29,20 @@
     <div class="title" >
     <h3> Welcom to blogithems </h3>
     </div>
-    <?php foreach($data as $row) : ?>
-       
-    <div class="main">
-    <div class="main_o">
-        <div class="paragraphe">
-        <h3><?php echo $row->name_blog?></h3>
-        <h4><?php echo $row->description?></h4>
-        </div>
-        <div>
-        <img src="<?php echo URLROOT; ?>/css/images.jpg">
-        </div>
     
-    
-    
-
+      <?php foreach($data as $row) : ?>
+      <div class="card text-center" style="border: solid;width:1000px; margin: 25px auto 75px auto; ">
+    <div class="card-header">
+      ?
     </div>
-
+    <div class="card-body" style=" background-image: url(css/chi.jpg);background-repeat: repeat-y;background-size: 994px 209px; ">
+      <h5 class="card-title" ><?php echo $row->name_blog?></h5>
+      <p class="card-text" style="margin: auto; margin-bottom:10px"><?php echo $row->description?></p>
+      <a  href="<?php echo URLROOT; ?>/ArticleController/show/<?php echo $row->id; ?>" class="btn btn-primary">Go somewhere</a>
     </div>
-    <?php endforeach; ?>
+    <div class="card-footer text-muted"></div>
+  </div>
+  <?php endforeach; ?>
     <footer class="bg-light text-center text-lg-start">
         <!-- Copyright -->
         <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">

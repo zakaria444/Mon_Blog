@@ -24,7 +24,7 @@
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
                 <form class="d-flex ">
                 <h3>welcom <?php echo  $_SESSION['name'];?></h3>
-                  <a class="btn btn-outline-light bg-dark navbar-light text-light" type="button" href="<?php echo URLROOT; ?>/articleController/index"> logout </a>
+                  <a class="btn btn-outline-light bg-dark navbar-light text-light" type="button" href="<?php echo URLROOT; ?>"> logout </a>
                 </form>
               </div>
           </nav>
@@ -38,29 +38,26 @@
 
     
     </div>
+    
     <?php foreach($data as $row) : ?>
-       
-    <div class="main">
-    <div class="main_o">
-        <div class="paragraphe">
-        <h3><?php echo $row->name_blog?></h3>
-        <h4><?php echo $row->description?></h4>
-        <div class="crud">
+      <div class="card text-center" style="border: solid;width:1000px; margin: 25px auto 75px auto; ">
+    <div class="card-header">
+      ?
+    </div>
+    <div class="card-body" style=" background-image: url(css/chi.jpg);background-repeat: repeat-y;background-size: 994px 209px; ">
+      <h5 class="card-title" ><?php echo $row->name_blog?></h5>
+      <p class="card-text" style="margin: auto; margin-bottom:10px"><?php echo $row->description?></p>
+      <div class="crud">
         <a class="btn btn-outline-light bg-dark navbar-light text-light" type="button" href="<?php echo URLROOT; ?>/ArticleController/edit/<?php echo $row->id; ?>"> Edit </a>
         
-        <a class="btn btn-outline-light bg-dark navbar-light text-light" type="button" href="<?php echo URLROOT; ?>/ArticleController/show/<?php echo $row->id; ?>" >Views</a>
+        <a class="btn btn-outline-light bg-dark navbar-light text-light" type="button" href="<?php echo URLROOT; ?>/ArticleController/show/<?php echo $row->id; ?>" >ShowMore</a>
         <a class="btn btn-outline-light bg-dark navbar-light text-light" type="button" href="<?php echo URLROOT; ?>/ArticleController/delete/<?php echo $row->id; ?>" >Delete</a>
 
         </div>
-        </div>
-        <div>
-        <img src="<?php echo URLROOT; ?>/css/images.jpg">
-        </div>
-    
     </div>
-
-    </div>
-    <?php endforeach; ?>
+    <div class="card-footer text-muted"></div>
+  </div>
+  <?php endforeach; ?>
     <footer class="bg-light text-center text-lg-start">
         <!-- Copyright -->
         <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">

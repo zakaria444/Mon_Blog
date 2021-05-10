@@ -32,21 +32,27 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 900px;
+   
 }
 .card-img{
 
 }
 .card{
     display:flex;
+
 }
 .card-text{
     border: solid;
     width: 500px;
     HEIGHT: 100px;
-    font-style: oblique;
+    /* font-style: oblique; */
 
 }
 .card-title{
+   margin-bottom: ;
     
+
+}
+.card-body{
+    background-image: url(css/chi.jpg);
 }

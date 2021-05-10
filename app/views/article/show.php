@@ -32,7 +32,7 @@ var_dump($data);
     
     </div>
     <div class="card bg-dark text-white">
-  <img class="card-img"  src="<?php echo URLROOT; ?>/css/img1.jpg" alt="Card image">
+  <img class="card-img"  src="<?php echo URLROOT; ?>/css/img2.jpg" alt="Card image">
   <div class="card-img-overlay">
     <h5 class="card-title"><?php echo $data->name_blog?></h5>
     <p class="card-text"><?php echo $data->description?></p>
