@@ -9,7 +9,8 @@
     <title>Document</title>
 </head>
 <body>
-<form action="<?php echo URLROOT; ?>/ArticleController/editid/<?php echo $data->id; ?>" method="POST">
+<div class="d-flex justify-content-center " style="margin-top: 100px;" >
+<form action="<?php echo URLROOT; ?>/ArticleController/editid/<?php echo $data->id; ?>" method="POST" style="border: solid 1px; width:50%;">
 
 <div class="mb-3">
   <label for="exampleFormControlInput1" class="form-label">Naming Blog</label>
@@ -21,14 +22,18 @@
 </div>
 <div class="mb-3">
   <label for="exampleFormControlTextarea1" class="form-label">Textarea</label>
-  <input class="form-control" name="description" value="<?php echo $data->description?>" id="exampleFormControlTextarea1" rows="3"></input>
+  <input class="form-control" style="height: 100px;" name="description" value="<?php echo $data->description?>" id="exampleFormControlTextarea1" rows="3"></input>
 </div>
+<div class="d-flex justify-content-around ">
 <input type="submit" name="edit" class="btn btn-primary" value="Edit"></input>
+<a type="button" href="<?php echo URLROOT; ?>/admin" class="btn btn-secondary">BACK</a>
+</div>
 </form>
+</div>
 
 </body>
 </html>
 <?php
 
-var_dump($data);
+
 ?>

@@ -28,17 +28,18 @@ var_dump($data);
               </div>
           </nav>
     </header>
-    <div>
+    <div class="d-flex justify-content-center">
     
-    </div>
-    <div class="card bg-dark text-white">
-  <img class="card-img"  src="<?php echo URLROOT; ?>/css/img2.jpg" alt="Card image">
+    
+    <div class="card bg-dark text-white" style="width:500px">
+  <img class="card-img"  src="<?php echo URLROOT; ?>/css/img1.jpg" alt="Card image">
   <div class="card-img-overlay">
     <h5 class="card-title"><?php echo $data->name_blog?></h5>
     <p class="card-text"><?php echo $data->description?></p>
     <p class="card-text"><?php echo $data->chapiter_blog?></p>
     <a type="button" href="<?php echo URLROOT; ?>/admin" class="btn btn-secondary">BACK</a>
   </div>
+</div>
 </div>
     
 </body>
