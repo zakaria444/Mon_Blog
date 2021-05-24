@@ -56,3 +56,10 @@ footer{
 .card-body{
     background-image: url(css/chi.jpg);
 }
+.login{
+    border: solid;
+    height: 300px;
+    background-color: #000080;
+    
+   
+}

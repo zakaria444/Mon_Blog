@@ -42,7 +42,7 @@
     <?php foreach($data as $row) : ?>
       <div class="card text-center" style="border: solid;width:1000px; margin: 25px auto 75px auto; ">
     <div class="card-header">
-      ?
+      ...
     </div>
     <div class="card-body" style=" background-image: url(css/chi.jpg);background-repeat: repeat-y;background-size: 994px 209px; ">
       <h5 class="card-title" ><?php echo $row->name_blog?></h5>
@@ -62,7 +62,7 @@
         <!-- Copyright -->
         <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
           © 2021 Copyright:
-          <a class="text-dark" href="<?php echo URLROOT; ?>/articleController/index">blogithems.com</a>
+          <a class="text-dark" href="<?php echo URLROOT; ?>">blogithems.com</a>
         </div>
         <!-- Copyright -->
       </footer>

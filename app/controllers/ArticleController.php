@@ -44,6 +44,10 @@ public function __construct(){
 
 
       }
+      public function showview($id){
+        $articl = $this->articleModel->getContactById($id);
+        $this->view('article/showview', $articl);
+      }
       public function edit($id){
         if(!isset($_POST['edit'])){
           $articl = $this->articleModel->getContactById($id);

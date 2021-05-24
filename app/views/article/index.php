@@ -38,7 +38,7 @@
     <div class="card-body" style=" background-image: url(css/chi.jpg);background-repeat: repeat-y;background-size: 994px 209px; ">
       <h5 class="card-title" ><?php echo $row->name_blog?></h5>
       <p class="card-text" style="margin: auto; margin-bottom:10px"><?php echo $row->description?></p>
-      <a  href="<?php echo URLROOT; ?>/ArticleController/show/<?php echo $row->id; ?>" class="btn btn-primary">Go somewhere</a>
+      <a  href="<?php echo URLROOT; ?>/ArticleController/showview/<?php echo $row->id; ?>" class="btn btn-primary">ShowMore</a>
     </div>
     <div class="card-footer text-muted"></div>
   </div>
