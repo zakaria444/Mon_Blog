@@ -8,8 +8,27 @@
     <link rel="stylesheet" href="<?php echo URLROOT; ?>/css/style.css?v=<?php echo time();?>" >
     <title>Document</title>
 </head>
-<body>
-<form action="<?php echo URLROOT; ?>/ArticleController/add" method="POST">
+<body >
+<header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-secondary navbar-dark">
+            <div class="container">
+                <button class="btn" disabled>
+                    <a class="navbar-brand spinner-grow spinner-grow-sm " href="#"></a>
+                  </button>
+                  <a class="navbar-brand " href="#">Blog Ithems</a>
+              
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
+                <form class="d-flex ">
+                  <a class="btn btn-outline-light bg-dark navbar-light text-light" type="button" href="<?php echo URLROOT; ?>/BlogController/login"> Login </a>
+                </form>
+              </div>
+          </nav>
+    </header>
+    <div class="d-flex justify-content-center">
+        <h1 class="page-header">Adding Blog </h1>
+    </div>
+  <div class="d-flex justify-content-center " style="margin-top: 100px;" >
+<form action="<?php echo URLROOT; ?>/ArticleController/add" method="POST" style="border: solid 1px; width:50%;" class="">
 <div class="mb-3">
   <label for="exampleFormControlInput1" class="form-label">Naming Blog</label>
   <input type="text" name="name_blog" class="form-control" id="exampleFormControlInput1" placeholder="title">
@@ -22,7 +41,11 @@
   <label for="exampleFormControlTextarea1" class="form-label">Textarea</label>
   <textarea class="form-control" name="description" id="exampleFormControlTextarea1" rows="3"></textarea>
 </div>
-<input type="submit" name="add" class="btn btn-primary" value="add"></input>
+<div class="d-flex justify-content-around ">
+<input type="submit" name="add" class="btn btn-success" value="add"></input>
+<a type="button" href="<?php echo URLROOT; ?>/admin" class="btn btn-secondary">BACK</a></div>
+  </div>
 </form>
+</div>
 </body>
 </html>

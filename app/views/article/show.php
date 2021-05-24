@@ -37,7 +37,7 @@ var_dump($data);
     <h5 class="card-title"><?php echo $data->name_blog?></h5>
     <p class="card-text"><?php echo $data->description?></p>
     <p class="card-text"><?php echo $data->chapiter_blog?></p>
-    <a type="button" href="<?php echo URLROOT; ?>" class="btn btn-secondary">BACK</a>
+    <a type="button" href="<?php echo URLROOT; ?>/admin" class="btn btn-secondary">BACK</a>
   </div>
 </div>
     
