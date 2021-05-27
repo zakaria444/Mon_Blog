@@ -49,7 +49,7 @@ class BlogController extends Controller{
             } else {
               $data['password_err'] = 'Password incorrect';
   
-              $this->view('', $data);
+              $this->view('users/login', $data);
             }
           } else {
             // Load view with errors

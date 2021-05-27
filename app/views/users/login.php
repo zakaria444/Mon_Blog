@@ -1,6 +1,4 @@
-<?php 
 
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,6 +10,7 @@
     <title>Document</title>
 </head>
 <body class="log-adm">
+
 <div class="card-body" style=" background-image: url(css/chi.jpg);background-repeat: repeat-y;background-size: 994px 209px; "> 
 <form action="<?php echo URLROOT; ?>/BlogController/login" method="post" class="login-admin d-flex justify-content-center" >
 <div class="login col-5">

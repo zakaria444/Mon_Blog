@@ -3,6 +3,7 @@ border: solid 1px ;
 display: flex;
 justify-content: center;
 margin-top: 50px;
+height: 50px;
 }
 .main{
     margin-top: 80px;
@@ -43,7 +44,7 @@ footer{
 }
 .card-text{
     border: solid;
-    width: 500px;
+    width: 300px;
     HEIGHT: 100px;
     /* font-style: oblique; */
 
@@ -72,3 +73,13 @@ footer{
    
     
 }
+.titl-img{
+    
+}
+.main-title-img{
+    height: 500px;
+    width: 1500px;
+    background-image: url(viwes.jpg);
+    /* background-size: 100px 100px; */
+}
+

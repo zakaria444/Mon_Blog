@@ -11,23 +11,14 @@
     <title>Document</title>
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-secondary navbar-dark">
-            <div class="container">
-                <button class="btn" disabled>
-                    <a class="navbar-brand spinner-grow spinner-grow-sm " href="#"></a>
-                  </button>
-                  <a class="navbar-brand " href="#">Blog Ithems</a>
-              
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
-                <form class="d-flex ">
-                  <a class="btn btn-outline-light bg-dark navbar-light text-light" type="button" href="<?php echo URLROOT; ?>/BlogController/login"> Login </a>
-                </form>
-              </div>
-          </nav>
-    </header>
-    <div class="title" >
-    <h3> Welcom to blogithems </h3>
+<?php require APPROOT .'/views/inc/header.php';?>
+   
+    <div  class="d-flex justify-content-center">
+    <div class="main-title-img"  >
+    <h3 class="title"> Welcom to blogithems </h3>
+    <div class="titl-img">
+    </div>
+    </div>
     </div>
     
       <?php foreach($data as $row) : ?>
