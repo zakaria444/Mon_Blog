@@ -82,4 +82,10 @@ footer{
     background-image: url(viwes.jpg);
     /* background-size: 100px 100px; */
 }
+#menu li{
+    text-decoration: none;
+    list-style: none;
+   
+
+}
 
